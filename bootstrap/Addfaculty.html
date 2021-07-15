@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Addfaculty</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar" style="height:40px ;  color:white ; background-color:#007bff;">
+
+        <img src="image/img_avatar2.png" height="30">
+        <a class="navbar-brand h1 ml-2" href="#">ORS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+               <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                        Marksheet
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Getmarksheet.html">Get Marksheet</b></a>
+                        <a class="dropdown-item" href="Marksheetmeritlist.html">Marksheet MeritList</b>
+                        <a class="dropdown-item"  href="Addmarksheet.html">Add Marksheet</b></a>
+                        <a class="dropdown-item" href="marksheetlist.html">Marksheet List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white" >
+                        User
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Adduser.html">Add User</b></a>
+                        <a class="dropdown-item" href="Userlist.html">User List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                        College
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Addcollege.html">Add College</b></a>
+                        <a class="dropdown-item" href="Collegelist.html">College List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                        Student
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Addstudent.html">Add Student</b></a>
+                        <a class="dropdown-item" href="Studentlist.html">Student List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                        Course
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Addcourse.html">Add Course</b></a>
+                        <a class="dropdown-item" href="Courselist.html">Course List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                        Role
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Addrole.html">Add Role</b></a>
+                        <a class="dropdown-item" href="Rolelist.html">Role List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                       Subject
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Addsubject.html">Add Subject</b></a>
+                        <a class="dropdown-item" href="Subjectlist.html">Subject List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                        Time Table
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Addtimetable.html">Add Timetable</b></a>
+                        <a class="dropdown-item" href="Timetablelist.html">Timetable List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                        Faculty
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Addfaculty.html">Add Faculty</b></a>
+                        <a class="dropdown-item" href="Faculty.html">Faculty List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="javadoc.html" style="color: white">Java Doc</span></a>
+                </li>
+            </ul>
+
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" style="color: white">
+                            Welcome Bijendra Singh
+                        </a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="Myprofil.html">MyProfile</b></a>
+                            <a class="dropdown-item" href="Changepassword.html">Change Password</b></a>
+                            <a class="dropdown-item" href="index.html">Logout</b></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container_fluid m-4">
+        <div class="container border col-sm-6">
+
+            <h4 class="border-bottom pt-2">Add Faculty</h4>
+
+            <div class="alert alert-danger">
+                <strong style="color: red;"> 
+                    Faculty is not Added
+                </strong>
+            </div>
+            <div class="alert alert-success">
+                <strong style="color: green;"> 
+                    Faculty is Added
+                </strong>
+            </div>
+            <form action="index.html" class="was-validated">
+                <input type="hidden" name="id" value="0">
+                <input type="hidden" name="createdBy" value="root">
+                <input type="hidden" name="modifiedBy" value="root">
+                <input type="hidden" name="createdDatetime" value="1613535683663">
+                <input type="hidden" name="modifiedDatetime" value="1613535683663">
+                <div class="form-group form-row">
+                    <label for="firstName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        FirstName <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="lastName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Last Name <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-group form-row">
+                    <label for="login" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Email <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="email" id="login" name="login" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="pwd" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Password <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="password" id="pwd" name="pwd" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="lastName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Address <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" id="Address" name="Address" placeholder="Address" required>
+                    </div>
+                </div>
+                 <div class="form-group form-row">
+                    <label for="Mobileno." class="col-sm-2 col-form-label col-form-label-sm col">
+                        Mobile No. <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text"  id="MobileNo" name="MobileNo" placeholder="MobileNo" required>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="gender" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Gender</i>
+                    </label>
+                    <div class="col">
+                        <select class="form-control form-control-sm" name='gender'>
+                            <option selected value='F'>Female</option>
+                            <option value='M'>Male</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="dob" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Date Of Birth
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="date" id="dob" name="dob" placeholder="Date of Birth">
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="lastName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        College<i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <select class="form-control form-control-sm" name='studentId'>
+                            <option selected value=''>--Select--</option>
+                            <option value='3'>1</option>
+                            <option value='2'>2</option>
+                            <option value='15'>3</option>
+                            <option value='16'>4</option>
+                            <option value='3'>5</option>
+                            <option value='2'>6</option>
+                            <option value='15'>7</option>
+                            <option value='16'>8</option>
+                         </select>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="lastName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Course <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <select class="form-control form-control-sm" name='studentId'>
+                            <option selected value=''>--Select--</option>
+                            <option value='3'>Corporat Java</option>
+                            <option value='2'>Cloud Computing</option>
+                            <option value='15'>Python</option>
+                            <option value='16'>DOT Net</option>
+                            <option value='1'>Testing</option>
+                         </select>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="lastName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Subject<i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <select class="form-control form-control-sm" name='studentId'>
+                            <option selected value=''>--Select--</option>
+                            <option value='3'>Core java</option>
+                            <option value='2'>Advance java</option>
+                            <option value='15'>SQL server</option>
+                            <option value='16'>Spring</option>
+                         </select>
+                    </div>
+                </div>
+                 <div class="form-group form-row justify-content-end">
+                    <button type="submit" class="btn btn-outline-primary btn-sm"><i class="fa fa-save"></i>
+                        Save
+                    </button> &nbsp;
+                    <button type="submit" class="btn btn-outline-secondary btn-sm">
+                        <i class="fa fa-window-close"></i> Close
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <p class="d-flex justify-content-center">© 2017, Rays Technologies, SunilOS Infotech Pvt Ltd. </p>
+</body>
+</html>

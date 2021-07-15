@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>welcome</title>
+    <title>Myprofil</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -23,7 +22,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html" style="color: white">Home<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown">
+               <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
                         Marksheet
                     </a>
@@ -128,12 +127,78 @@
         </div>
     </nav>
     <div class="container_fluid m-4">
-        <div class="jumbotron text-center">
-            <h1>Welcome to ORS</h1>
-        </div>
+        <div class="container border col-sm-6">
 
+            <h4 class="border-bottom pt-2">My Profile</h4>
+            <div class="alert alert-success">
+                <strong> 
+                    Profile is saved
+                </strong>
+            </div>
+            <form action="ChangePassword.html" class="was-validated">
+                <input type="hidden" name="id" value="0">
+                <input type="hidden" name="createdBy" value="root">
+                <input type="hidden" name="modifiedBy" value="root">
+                <input type="hidden" name="createdDatetime" value="1613535683663">
+                <input type="hidden" name="modifiedDatetime" value="1613535683663">
+                <div class="form-group form-row">
+                    <label for="login" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Login <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="email" id="login" name="login" value="admin@gmail.com" readonly>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="firstName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        FirstName <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="lastName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Last Name <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-group form-row">
+                    <label for="gender" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Gender</i>
+                    </label>
+                    <div class="col">
+                        <select class="form-control form-control-sm" name='gender'>
+                            <option selected value='F'>Female</option>
+                            <option value='M'>Male</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="dob" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Date Of Birth
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="date" id="dob" name="dob" placeholder="Date of Birth">
+                    </div>
+                </div>
+                <div class="form-group form-row justify-content-end">
+                    <button type="submit" class="btn btn-outline-primary btn-sm">
+                        <i class="fa fa-save"></i> Save 
+                    </button>&nbsp;
+                    <button type="submit" class="btn btn-outline-primary btn-sm">
+                        <i class="fa fa-key"></i> Change Password
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
+
     <p class="d-flex justify-content-center">© 2017, Rays Technologies, SunilOS Infotech Pvt Ltd. </p>
+
 </body>
 
 </html>

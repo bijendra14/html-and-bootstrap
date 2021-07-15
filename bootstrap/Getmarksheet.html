@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>welcome</title>
+    <title>Getmarksheet</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -23,7 +23,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html" style="color: white">Home<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown">
+               <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
                         Marksheet
                     </a>
@@ -127,11 +127,36 @@
             </div>
         </div>
     </nav>
-    <div class="container_fluid m-4">
-        <div class="jumbotron text-center">
-            <h1>Welcome to ORS</h1>
-        </div>
+     <div class="container_fluid m-4">
+        <div class="container border col-sm-6">
 
+            <h4 class="border-bottom pt-2">Get Marksheet</h4>
+            <div class="alert alert-danger">
+                <strong> 
+                    Role number is not found 
+                </strong>
+            </div>
+            <form action="Marksheet.html" class="was-validated">
+                <input type="hidden" name="id" value="0">
+                <input type="hidden" name="createdBy" value="root">
+                <input type="hidden" name="modifiedBy" value="root">
+                <input type="hidden" name="createdDatetime" value="1613535683663">
+                <input type="hidden" name="modifiedDatetime" value="1613535683663">
+                <div class="form-group form-row">
+                    <label for="rollNo" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Roll No <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" id="rollNo" name="rollNo" placeholder="Roll No" required>
+                    </div>
+                </div>
+                <div class="form-group form-row justify-content-end">
+                    <button type="submit" class="btn btn-outline-primary btn-sm">
+                        <i class="fa fa-sign-in-alt"></i> Go
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
     <p class="d-flex justify-content-center">© 2017, Rays Technologies, SunilOS Infotech Pvt Ltd. </p>
 </body>

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>welcome</title>
+    <title>Collegelist</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -128,12 +127,188 @@
         </div>
     </nav>
     <div class="container_fluid m-4">
-        <div class="jumbotron text-center">
-            <h1>Welcome to ORS</h1>
+        <div class="row border-bottom">
+            <div class="col">
+                <h4 class="my-1">College List</h4>
+            </div>
+          
         </div>
+        <form class="form-inline my-2 ">
+            <label for="Collegename " class="ml-sm-2 ">College Name </label>
+            <input type="text " name="Collegename " id="name " class="form-control form-control-sm ml-2 " placeholder="collegeName " [(ngModel)]="form.searchParams.name ">
+            
+            <button onclick="search() " class="btn btn-outline-primary btn-sm ml-2 "><i class="fa fa-search-plus "></i>
+                Search
+            </button>
+        </form>
+        <div class="table-responsive ">
+            <table class="table table-sm table-striped my-1 ">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>College Name</th>
+                        <th>Address</th>
+                        <th>State</th>
+                        <th>City</th>
+                        <th>Phone NO</th>
+                       
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>SGSITS</td>
+                        <td>indore</td>
+                        <td>MP</td>
+                        <td>indore</td>
+                        <td>23121995</td>
+                       
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="AddCollege.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " />
+                        </td>
+                        
+                       <td>IITDM</td>
+                        <td>jabalpur</td>
+                        <td>MP</td>
+                        <td>jabalpur</td>
+                        <td>93121995</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="AddCollege.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                      <td>JEC</td>
+                        <td>jabalpur</td>
+                        <td>MP</td>
+                        <td>jabalpur</td>
+                        <td>93121995</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="AddCollege.html?id=1  " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>SGSITS</td>
+                        <td>Vidhisa</td>
+                        <td>MP</td>
+                        <td>Vidhisa</td>
+                        <td>93121995</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="AddCollege.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>MITS</td>
+                        <td>Gwalior</td>
+                        <td>MP</td>
+                        <td>Gwalior</td>
+                        <td>93121995</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="AddCollege.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>GYAN GANGA</td>
+                        <td>jabalpur</td>
+                        <td>MP</td>
+                        <td>jabalpur</td>
+                        <td>93121995</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="AddCollege.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                   
+                    
+                   
+                   
 
+                </tbody>
+            </table>
+            <div class="row">
+
+                <div class="col">
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination">
+                            <li class="page-item ">
+                                <button class="btn btn-outline-primary btn-sm ml-3">Previous</button>
+                                
+                                </li>
+                                </ul>
+                                </nav>
+                                </div>
+                                 <div class="col">
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination justify-content-center ">
+                            <li class="page-item ">
+                                
+                                <button class="btn btn-outline-primary btn-sm ">New</button>
+                                <button class="btn btn-outline-primary btn-sm ">Delete</button>
+
+                                </li>
+                                </ul>
+                                </nav>
+                                </div>
+
+                                          
+                           
+                                <div class="col">
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item ">
+                                
+                                <button class="btn btn-outline-primary btn-sm mr-5">Next</button>
+                                </li>
+                                </ul>
+                                </div>
+</nav>
+            
+        </div>
+        <p class="text-center">© 2017, Rays Technologies, SunilOS Infotech Pvt Ltd. </p>
     </div>
-    <p class="d-flex justify-content-center">© 2017, Rays Technologies, SunilOS Infotech Pvt Ltd. </p>
+    </div>
 </body>
 
 </html>

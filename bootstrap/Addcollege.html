@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>welcome</title>
+    <title>Addcollege</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -10,20 +10,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 </head>
+
 <body>
     <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar" style="height:40px ;  color:white ; background-color:#007bff;">
+
         <img src="image/img_avatar2.png" height="30">
         <a class="navbar-brand h1 ml-2" href="#">ORS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html" style="color: white">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown">
+               <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
                         Marksheet
                     </a>
@@ -127,11 +131,128 @@
             </div>
         </div>
     </nav>
-    <div class="container_fluid m-4">
-        <div class="jumbotron text-center">
-            <h1>Welcome to ORS</h1>
-        </div>
 
+    <div class="container_fluid m-4">
+        <div class="container border col-sm-6">
+
+            <h4 class="border-bottom pt-2">Add College</h4>
+            <div class="alert alert-danger">
+                <strong style="color: red;"> 
+                    College is not Added
+                </strong>
+            </div>
+            <div class="alert alert-success">
+                <strong style="color: green;"> 
+                    College is Added
+                </strong>
+            </div>
+            <form class="was-validated">
+                <input type="hidden" name="id" value="0">
+                <input type="hidden" name="createdBy" value="root">
+                <input type="hidden" name="modifiedBy" value="root">
+                <input type="hidden" name="createdDatetime" value="1613535683663">
+                <input type="hidden" name="modifiedDatetime" value="1613535683663">
+                 <div class="form-group form-row">
+                    <label for="CollegeName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        College <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" id="College" name="College" placeholder="CollegeName" required>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="Address" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Address <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" id="Address" name="Address" placeholder="Address" required>
+                    </div>
+                </div>
+
+                <div class="form-group form-row">
+                    <label for="lastName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        STATE <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <select class="form-control form-control-sm" name='studentId'>
+                            <option selected value=''>--Select--</option>
+                            <option value='3'>Ashish Nehra</option>
+                            <option value='2'>Manish Sharma</option>
+                            <option value='15'>Pankaj Sahu</option>
+                            <option value='16'>RAM GUPTA</option>
+                            <option value='1'>Rahul Sahu</option>
+                            <option value='23'>abhi gyanganga</option>
+                            <option value='19'>hari lnct</option>
+                            <option value='22'>hemant gyanganga</option>
+                            <option value='5'>hfghhfg fgd</option>
+                            <option value='21'>kamlesh gyanganga</option>
+                            <option value='6'>mohan lal</option>
+                            <option value='18'>mohan lnct</option>
+                            <option value='24'>neel gyanganga</option>
+                            <option value='20'>pankaj lnct</option>
+                            <option value='11'>r rr</option>
+                            <option value='25'>rahul gyanganga</option>
+                            <option value='10'>rajesh hj</option>
+                            <option value='7'>rajesh sharma</option>
+                            <option value='9'>raju mali</option>
+                            <option value='13'>rakesh varma</option>
+                            <option value='14'>rakesh varma12</option>
+                            <option value='17'>shyam gupta</option>
+                            <option value='8'>t choudhary</option>
+                         </select>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="lastName" class="col-sm-2 col-form-label col-form-label-sm col">
+                        City<i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <select class="form-control form-control-sm" name='studentId'>
+                            <option selected value=''>--Select--</option>
+                            <option value='3'>Ashish Nehra</option>
+                            <option value='2'>Manish Sharma</option>
+                            <option value='15'>Pankaj Sahu</option>
+                            <option value='16'>RAM GUPTA</option>
+                            <option value='1'>Rahul Sahu</option>
+                            <option value='23'>abhi gyanganga</option>
+                            <option value='19'>hari lnct</option>
+                            <option value='22'>hemant gyanganga</option>
+                            <option value='5'>hfghhfg fgd</option>
+                            <option value='21'>kamlesh gyanganga</option>
+                            <option value='6'>mohan lal</option>
+                            <option value='18'>mohan lnct</option>
+                            <option value='24'>neel gyanganga</option>
+                            <option value='20'>pankaj lnct</option>
+                            <option value='11'>r rr</option>
+                            <option value='25'>rahul gyanganga</option>
+                            <option value='10'>rajesh hj</option>
+                            <option value='7'>rajesh sharma</option>
+                            <option value='9'>raju mali</option>
+                            <option value='13'>rakesh varma</option>
+                            <option value='14'>rakesh varma12</option>
+                            <option value='17'>shyam gupta</option>
+                            <option value='8'>t choudhary</option>
+                         </select>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <label for="Mobileno." class="col-sm-2 col-form-label col-form-label-sm col">
+                        Mobile No. <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text"  id="MobileNo" name="MobileNo" placeholder="MobileNo" required>
+                    </div>
+                </div>
+                <div class="form-group form-row justify-content-end">
+                    <button type="submit" class="btn btn-outline-primary btn-sm"><i class="fa fa-save"></i>
+                        Save
+                    </button> &nbsp;
+                    <button type="submit" class="btn btn-outline-secondary btn-sm">
+                        <i class="fa fa-window-close"></i> Close
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
     <p class="d-flex justify-content-center">© 2017, Rays Technologies, SunilOS Infotech Pvt Ltd. </p>
 </body>

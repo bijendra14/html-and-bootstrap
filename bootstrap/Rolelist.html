@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>welcome</title>
+    <title>Rolelist</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -23,7 +22,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html" style="color: white">Home<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown">
+               <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
                         Marksheet
                     </a>
@@ -127,13 +126,124 @@
             </div>
         </div>
     </nav>
-    <div class="container_fluid m-4">
-        <div class="jumbotron text-center">
-            <h1>Welcome to ORS</h1>
+     <div class="container_fluid m-4">
+        <div class="row border-bottom">
+            <div class="col">
+                <h4 class="my-1">Role List</h4>
+            </div>
+          
         </div>
+        <form class="form-inline my-2 ">
+            <label for="name " class="ml-sm-2 ">Name </label>
+            <input type="text " name="name " id="name " class="form-control form-control-sm ml-2 " placeholder="Enter Name " [(ngModel)]="form.searchParams.name ">
+           
+            <button onclick="search() " class="btn btn-outline-primary btn-sm ml-2 "><i class="fa fa-search-plus "></i>
+                Search
+            </button>
+        </form>
+        <div class="table-responsive ">
+            <table class="table table-sm table-striped my-1 ">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th> Name</th>
+                        <th>Description</th>
+                       
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>Admin</td>
+                        <td>Admin</td>
+                        
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Role.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " />
+                        </td>
+                        
+                         <td>faculty</td>
+                        <td>faculty</td>
+                        
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Role.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                       <td>student</td>
+                        <td>student</td>
+                        
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Role.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <div class="row">
 
+                <div class="col">
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination">
+                            <li class="page-item ">
+                                <button class="btn btn-outline-primary btn-sm ml-3">Previous</button>
+                                
+                                </li>
+                                </ul>
+                                </nav>
+                                </div>
+                                 <div class="col">
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination justify-content-center ">
+                            <li class="page-item ">
+                                
+                                <button class="btn btn-outline-primary btn-sm ">New</button>
+                                <button class="btn btn-outline-primary btn-sm ">Delete</button>
+
+                                </li>
+                                </ul>
+                                </nav>
+                                </div>
+
+                                          
+                           
+                                <div class="col">
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item ">
+                                
+                                <button class="btn btn-outline-primary btn-sm mr-5">Next</button>
+                                </li>
+                                </ul>
+                                </div>
+</nav>
+            
+        </div>
+        <p class="text-center">© 2017, Rays Technologies, SunilOS Infotech Pvt Ltd. </p>
     </div>
-    <p class="d-flex justify-content-center">© 2017, Rays Technologies, SunilOS Infotech Pvt Ltd. </p>
+    </div>
 </body>
 
 </html>
