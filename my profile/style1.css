@@ -1,0 +1,31 @@
+ .topnav {
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: red;
+  text-decoration: none;
+}
+.bij{
+  background-image: url("image/service-bg.jpg");
+}
+ .dropdown:hover .dropdown-menu{
+        display: block;
+        margin-top: 4;
+        right: all;
+        
+    }
+  
+body{
+  background-image: url("image/slider.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+}
